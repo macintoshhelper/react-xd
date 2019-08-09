@@ -1,0 +1,42 @@
+{
+  "name": "react-xd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macintoshhelper/react-xd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macintoshhelper/react-xd/issues"
+  },
+  "homepage": "https://github.com/macintoshhelper/react-xd#readme",
+  "dependencies": {
+    "@adobe/xdpm": "^3.0.1",
+    "react": "^16.3.2",
+    "react-reconciler": "^0.20.4",
+    "react-test-renderer": "^16.8.6",
+    "scheduler": "^0.14.0",
+    "yoga-layout": "^1.9.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "flow-bin": "^0.104.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}

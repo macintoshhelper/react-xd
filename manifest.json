@@ -1,0 +1,28 @@
+{
+  "id": "1e6252b5",
+  "name": "React XD",
+  "version": "0.0.1",
+  "description": "React project to XD integration.",
+  "summary": "React project to XD integration.",
+  "languages": [
+    "en"
+  ],
+  "author": "macintoshhelper",
+  "helpUrl": "https://example.com",
+  "host": {
+    "app": "XD",
+    "minVersion": "13.0"
+  },
+  "uiEntryPoints": [
+    {
+      "type": "menu",
+      "label": "Render",
+      "commandId": "render"
+    },
+    {
+      "type": "menu",
+      "label": "Test",
+      "commandId": "test"
+    }
+  ]
+}
