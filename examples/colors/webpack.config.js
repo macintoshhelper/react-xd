@@ -25,7 +25,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'react-xd': path.resolve(__dirname, '../../src/'),
+      'react-xd': path.resolve(__dirname, '../../dist/bundle.esm.js'),
     },
   },
   externals: {
