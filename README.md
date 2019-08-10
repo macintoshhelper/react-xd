@@ -1,6 +1,6 @@
 # React XD
 
-Render React components to Adobe XD. This can be used for React cross-platform UI libraries and for creating design systems.
+Render React components to Adobe XD. This can be used for React cross-platform UI libraries and for creating design systems. The (incomplete) API is based off React Native/`react-primitives`
 
 This is a **proof of concept** for testing and feedback purposes. **Please** do not use in **production** systems.
 
@@ -87,6 +87,10 @@ export const commands = {
 };
 ```
 
+## Credit
+- [react-sketchapp](https://github.com/airbnb/react-sketchapp) – inspired this project, and some bits of code are borrowed from it.
+  - MIT License
+  - Copyright (c) 2018 Airbnb
 
 ## Contributing
 
