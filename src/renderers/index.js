@@ -1,7 +1,25 @@
-export { default as artboard } from "./ArtboardRenderer";
-// export { default as image } from "./ImageRenderer";
-// export { default as svg } from "./SvgRenderer";
-export { default as text } from "./TextRenderer";
-// export { default as view } from "./ViewRenderer";
-// export { default as symbolinstance } from "./SymbolInstanceRenderer";
-// export { default as symbolmaster } from "./SymbolMasterRenderer";
+import Root from './Root';
+import Text from './Text';
+import Document from './Document';
+import Artboard from './Artboard';
+import View from './View';
+
+const constructors = {
+  root: Root,
+  document: Document,
+  artboard: Artboard,
+  text: Text,
+  view: View,
+};
+
+function createInstance(element, root) {
+  const { type, props = {} } = element;
+
+  if (constructors[type]) {
+    return new constructors[type](root, props);
+  }
+
+  throw new Error(`Invalid element of type ${type} passed to XD renderer`);
+}
+
+export { createInstance };

@@ -9,25 +9,24 @@ type Props = {
   children: ReactNode,
 };
 
-export default class Artboard extends React.Component<Props> {
+export default class Text extends React.Component<Props> {
   static defaultProps = {
-    name: 'Artboard',
+    name: 'Text',
   };
 
   render() {
     const { name, style, children } = this.props;
 
     return (
-      <artboard
+      <text
         name={name}
         style={{
-          width: 360,
-          height: 640,
-          ...style,
+          fontSize: 16,
+          ...(style && StyleSheet.flatten(style))
         }}
       >
         {children}
-      </artboard>
+      </text>
     );
   }
 }

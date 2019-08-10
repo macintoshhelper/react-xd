@@ -2,7 +2,7 @@
   "name": "react-xd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,11 +20,11 @@
   "homepage": "https://github.com/macintoshhelper/react-xd#readme",
   "dependencies": {
     "@adobe/xdpm": "^3.0.1",
+    "css-layout": "^1.1.1",
     "react": "^16.3.2",
     "react-reconciler": "^0.20.4",
     "react-test-renderer": "^16.8.6",
-    "scheduler": "^0.14.0",
-    "yoga-layout": "^1.9.3"
+    "scheduler": "^0.14.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

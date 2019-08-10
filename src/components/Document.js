@@ -7,10 +7,13 @@ export default class Document extends React.Component {
   };
 
   render() {
-    const { children } = this.props;
+    const { style, children } = this.props;
 
     return (
-      <document>
+      <document style={{
+        flexDirection: 'row',
+        ...style,
+      }}>
         {children}
       </document>
     );

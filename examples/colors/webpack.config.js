@@ -1,6 +1,7 @@
 const path = require('path');
 
-const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+const mode =
+  process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 module.exports = {
   entry: './src/main.js',
@@ -24,8 +25,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'react-xd': path.resolve(__dirname, './src/'),
-    }
+      'react-xd': path.resolve(__dirname, '../../src/'),
+    },
   },
   externals: {
     scenegraph: 'scenegraph',

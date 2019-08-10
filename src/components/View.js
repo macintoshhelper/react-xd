@@ -9,25 +9,24 @@ type Props = {
   children: ReactNode,
 };
 
-export default class Artboard extends React.Component<Props> {
+export default class View extends React.Component<Props> {
   static defaultProps = {
-    name: 'Artboard',
+    name: 'View',
   };
 
   render() {
     const { name, style, children } = this.props;
 
     return (
-      <artboard
+      <view
         name={name}
         style={{
-          width: 360,
-          height: 640,
-          ...style,
-        }}
-      >
+          flexDirection: 'column',
+          ...(style && StyleSheet.flatten(style))
+        }
+      }>
         {children}
-      </artboard>
+      </view>
     );
   }
 }
