@@ -4,6 +4,9 @@ Render React components to Adobe XD. This can be used for React cross-platform U
 
 This is a **proof of concept** for testing and feedback purposes. **Please** do not use in **production** systems.
 
+[![npm](https://img.shields.io/npm/v/react-xd.svg)](https://www.npmjs.com/package/react-xd)
+[![npm](https://img.shields.io/npm/dt/react-xd.svg)](https://www.npmjs.com/package/react-xd)
+
 > Inspired by [react-sketchapp](https://github.com/airbnb/react-sketchapp)
 
 ![Screenshot Preview](./docs/screenshot.jpg)
